@@ -13,33 +13,113 @@ import { ReactElement } from 'react';
 export class CommonUI implements IPublicApiCommonUI {
   [editorSymbol]: IEditor;
 
-  Balloon = Balloon;
-  Breadcrumb = Breadcrumb;
-  Button = Button;
-  Card = Card;
-  Checkbox = Checkbox;
-  DatePicker = DatePicker;
-  Dialog = Dialog;
-  Dropdown = Dropdown;
-  Form = Form;
-  Icon = Icon;
-  Input = Input;
-  Loading = Loading as any;
-  Message = Message;
-  Overlay = Overlay;
-  Pagination = Pagination;
-  Radio = Radio;
-  Search = Search;
-  Select = Select;
-  SplitButton = SplitButton;
-  Step = Step;
-  Switch = Switch;
-  Tab = Tab;
-  Table = Table;
-  Tree = Tree;
-  TreeSelect = TreeSelect;
-  Upload = Upload;
-  Divider = Divider;
+  get Balloon() {
+    return Balloon as any;
+  }
+
+  get Breadcrumb() {
+    return Breadcrumb as any;
+  }
+
+  get Button() {
+    return Button as any;
+  }
+
+  get Card() {
+    return Card as any;
+  }
+
+  get Checkbox() {
+    return Checkbox as any;
+  }
+
+  get DatePicker() {
+    return DatePicker as any;
+  }
+
+  get Dialog() {
+    return Dialog as any;
+  }
+
+  get Dropdown() {
+    return Dropdown as any;
+  }
+
+  get Form() {
+    return Form as any;
+  }
+
+  get Icon() {
+    return Icon as any;
+  }
+
+  get Input() {
+    return Input as any;
+  }
+
+  get Loading() {
+    return Loading as any;
+  }
+
+  get Message() {
+    return Message as any;
+  }
+
+  get Overlay() {
+    return Overlay as any;
+  }
+
+  get Pagination() {
+    return Pagination as any;
+  }
+
+  get Radio() {
+    return Radio as any;
+  }
+
+  get Search() {
+    return Search as any;
+  }
+
+  get Select() {
+    return Select as any;
+  }
+
+  get SplitButton() {
+    return SplitButton as any;
+  }
+
+  get Step() {
+    return Step as any;
+  }
+
+  get Switch() {
+    return Switch as any;
+  }
+
+  get Tab() {
+    return Tab as any;
+  }
+
+  get Table() {
+    return Table as any;
+  }
+
+  get Tree() {
+    return Tree as any;
+  }
+
+  get TreeSelect() {
+    return TreeSelect as any;
+  }
+
+  get Upload() {
+    return Upload as any;
+  }
+
+  get Divider() {
+    return Divider as any;
+  }
 
   ContextMenu: ((props: {
     menus: IPublicTypeContextMenuAction[];

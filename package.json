@@ -12,27 +12,27 @@
   },
   "scripts": {
     "build": "./scripts/build.sh",
-    "build:npm": "lerna run build --stream",
-    "build:umd": "lerna run build:umd --stream",
+    "build:npm": "rush build",
+    "build:umd": "rush build:umd",
     "clean": "rimraf ./packages/*/lib ./packages/*/es ./packages/*/dist ./packages/*/build",
     "clean:lib": "rimraf ./node_modules",
     "lint": "f2elint scan -q -i ./packages/*/src",
     "lint:fix": "f2elint fix -i ./packages/*/src",
     "lint:modules": "f2elint scan -q -i ./modules/*/src",
     "lint:modules:fix": "f2elint fix -i ./modules/*/src",
-    "pub": "npm run watchdog:build && lerna publish patch --yes --force-publish --exact --no-changelog",
-    "pub:minor": "npm run watchdog:build && lerna publish minor --yes --force-publish --exact --no-changelog",
-    "pub:major": "npm run watchdog:build && lerna publish major --yes --force-publish --exact --no-changelog",
-    "pub:premajor": "npm run watchdog:build && lerna publish premajor --force-publish --exact --dist-tag beta --preid beta --no-changelog",
-    "pub:preminor": "npm run watchdog:build && lerna publish preminor --force-publish --exact --dist-tag beta --preid beta --no-changelog",
-    "pub:prepatch": "npm run watchdog:build && lerna publish prepatch --force-publish --exact --dist-tag beta --preid beta --no-changelog",
-    "pub:prerelease": "npm run watchdog:build && lerna publish prerelease --yes --force-publish --exact --dist-tag beta --preid beta --no-changelog",
+    "pub": "npm run watchdog:build && rush publish -p patch",
+    "pub:minor": "npm run watchdog:build && rush publish -p minor",
+    "pub:major": "npm run watchdog:build && rush publish -p major",
+    "pub:premajor": "npm run watchdog:build && rush publish -p premajor --prerelease-id beta --tag beta",
+    "pub:preminor": "npm run watchdog:build && rush publish -p preminor --prerelease-id beta --tag beta",
+    "pub:prepatch": "npm run watchdog:build && rush publish -p prepatch --prerelease-id beta --tag beta",
+    "pub:prerelease": "npm run watchdog:build && rush publish -p prerelease --prerelease-id beta --tag beta",
     "setup": "node ./scripts/setup.js",
     "setup:test": "./scripts/setup-for-test.sh",
     "setup:skip-build": "./scripts/setup-skip-build.sh",
     "start": "node ./scripts/start.js",
-    "test": "lerna run test --stream",
-    "test:snapshot": "lerna run test:snapshot",
+    "test": "rush test",
+    "test:snapshot": "rush test:snapshot",
     "watchdog:build": "node ./scripts/watchdog.js",
     "sync": "./scripts/sync.sh",
     "syncOss": "node ./scripts/sync-oss.js"
@@ -59,7 +59,7 @@
     "@alilc/lowcode-test-mate": "^1.0.1"
   },
   "engines": {
-    "node": ">=14.17.0 <18"
+    "node": ">=14.17.0"
   },
   "tnpm": {
     "mode": "yarn",

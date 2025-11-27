@@ -1,0 +1,9 @@
+[
+  {
+    "policyName": "engine",
+    "definitionName": "lockStepVersion",
+    "version": "1.3.2",
+    "nextBump": "patch",
+    "mainProject": "@alilc/lowcode-engine"
+  }
+]

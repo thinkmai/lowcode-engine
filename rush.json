@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.163.0",
+  "pnpmVersion": "9.0.0",
+
+
+  "repository": {
+    "url": "git@github.com:alibaba/lowcode-engine.git",
+    "defaultBranch": "main"
+  },
+  "projects": [
+    {
+      "packageName": "@alilc/lowcode-engine",
+      "projectFolder": "packages/engine",
+      "reviewCategory": "production"
+    },
+    {
+      "packageName": "@alilc/lowcode-editor-core",
+      "projectFolder": "packages/editor-core",
+      "reviewCategory": "production"
+    },
+    {
+      "packageName": "@alilc/lowcode-editor-skeleton",
+      "projectFolder": "packages/editor-skeleton",
+      "reviewCategory": "production"
+    },
+    {
+      "packageName": "@alilc/lowcode-designer",
+      "projectFolder": "packages/designer",
+      "reviewCategory": "production"
+    },
+    {
+      "packageName": "@alilc/lowcode-shell",
+      "projectFolder": "packages/shell",
+      "reviewCategory": "production"
+    },
+    {
+      "packageName": "@alilc/lowcode-types",
+      "projectFolder": "packages/types",
+      "reviewCategory": "production"
+    },
+    {
+      "packageName": "@alilc/lowcode-utils",
+      "projectFolder": "packages/utils",
+      "reviewCategory": "production"
+    },
+    {
+      "packageName": "@alilc/lowcode-workspace",
+      "projectFolder": "packages/workspace",
+      "reviewCategory": "production"
+    },
+    {
+      "packageName": "@alilc/lowcode-renderer-core",
+      "projectFolder": "packages/renderer-core",
+      "reviewCategory": "production"
+    },
+    {
+      "packageName": "@alilc/lowcode-react-renderer",
+      "projectFolder": "packages/react-renderer",
+      "reviewCategory": "production"
+    },
+    {
+      "packageName": "@alilc/lowcode-plugin-designer",
+      "projectFolder": "packages/plugin-designer",
+      "reviewCategory": "production"
+    },
+    {
+      "packageName": "@alilc/lowcode-plugin-command",
+      "projectFolder": "packages/plugin-command",
+      "reviewCategory": "production"
+    }
+  ],
+
+
+}

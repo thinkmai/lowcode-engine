@@ -11,6 +11,9 @@ yarn.lock
 pnpm-lock.yaml
 deploy-space/packages
 deploy-space/.env
+common/temp/
+common/scripts/
+.rush/
 
 
 # IDE
